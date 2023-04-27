@@ -1,10 +1,11 @@
-package techpored.tests.day22_Annotation;
+package techproed.tests.day22_Annotation;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 public class C03_Priority {
     /*
@@ -27,6 +28,19 @@ public class C03_Priority {
     public void facebookTest() {
         driver.get("https://facebook.com");
     }
+    @Ignore
+    @Test
+    public void test1() {
+        System.out.println("Test1 Method");
+    }
+    @Test(enabled = false)
+    public void test2() {
+        System.out.println("Test2 Method");
+    }
+    /*
+        @Ignore notasyonu tanımlanmış test methodu çalışmayacaktır fakat raporlamalarda gözükücektir
+        @Test(enabled = false) parametresi olan test methoduda çalışmayacaktır ama raporlamalarda gözükmez
+     */
     @BeforeMethod
     public void setUp() {
         WebDriverManager.chromedriver().setup();
