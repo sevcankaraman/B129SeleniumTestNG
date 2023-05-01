@@ -17,7 +17,9 @@ public class C05_DataProvider {
     @DataProvider
     public static Object[][] blueRental() {
         return new Object[][]{{"sam.walker@bluerentalcars.com", "c!fas_art"},
-                {"kate.brown@bluerentalcars.com", "tad1$Fas"}};
+                              {"kate.brown@bluerentalcars.com", "tad1$Fas"},
+                              {"raj.khan@bluerentalcars.com","v7Hg_va^"},
+                              {"pam.raymond@bluerentalcars.com","Nga^g6!"}};
     }
 
     @Test(dataProvider = "blueRental")
@@ -28,6 +30,7 @@ public class C05_DataProvider {
         blueRentalPage.email.sendKeys(email, Keys.TAB, password, Keys.ENTER);
         ReusableMethods.bekle(3);
         Driver.closeDriver();
+
         /*
         C05 class'ındaki task için her kullanıcı ıcın doğrulama yapalım
         en son sayfayı kapatalım
