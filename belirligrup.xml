@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <test name="Regression1">
+        <groups>
+            <run>
+                <include name="RegressionGroup1"  />
+            </run>
+        </groups>
+
+        <!-- sadece  include olan methodlar calısır  -->
+        <!-- exclude olan methodlar harici tüm methodlar calısır  -->
+
+        <packages>
+            <package name="techproed.*"/>
+        </packages>
+
+        <!-- "<package name="techproed.*"/> " tüm projede techproed paketi altındakı
+         tüm @test methodlarını tarar ve "RegressionGroup1" ismi ile gruplanmıs
+         testleri çalıstırır -->
+    </test>
+
+</suite>
+
+
+
+
+
+
+

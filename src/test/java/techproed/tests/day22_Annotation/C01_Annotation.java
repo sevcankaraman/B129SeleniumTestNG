@@ -13,7 +13,7 @@ public class C01_Annotation {
     @AfterMethod:Her bir test methodundan sonra bir kez çalışır => JUnit'teki @After
     --TestNG de @BeforeGroups,@AfterGroups,@FindBy gibi notasyonlarda vardır bunları ileriki konularda göreceğiz
      */
-    @Test
+    @Test(groups = "RegressionGroup1")
     public void test1(){
         System.out.println("Test 1 Çalıştı");
     }
@@ -25,7 +25,7 @@ public class C01_Annotation {
     public void test3() {
         System.out.println("Test 3 Çalıştı");
     }
-    @Test
+    @Test(groups = "RegressionGroup1")
     public void test4() {
         System.out.println("Test 4 Çalıştı");
     }

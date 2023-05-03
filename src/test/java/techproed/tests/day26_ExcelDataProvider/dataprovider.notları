@@ -1,0 +1,17 @@
+/**
+     * Data Provider nedir?
+     - Veri deposudur.
+     - Coklu verileri loop kullanmadan test caselere aktarmak icin kullanilir.
+     - Data provider 2 boyutlu(2D) object return eder.
+     - Data provider TestNg'den gelen bir ozelliktir.
+     Data Provider ne icin kullanilir?
+     - DDT(Data Driven Testgin) icin kullanilir.
+     - Birden fazla datayi test caselerde kullanmak icin kullanilir.
+     Data Provider'i nasil kullanirsin?
+     - @DataProvider ile veri havuzu olusturulur.
+     - @Test methodlarina bu data havuzu baglanir.
+     - (dataProvider = "methodismi") ile baglanilir.
+     - 2 tane paramete vardir
+     ** name ---> farkli bir isim ile data provider'i cagirmak icin kullanilir.
+     ** parallel  ---> paralel test caseler olusturmak icin kullanilir.
+*/
